@@ -1,7 +1,7 @@
 ---
 title: "MVP 2.0"
 description: "Mínimo Produto Viável versão 2.0."
-pubDatetime: 2026-10-31T17:45:00Z
+pubDatetime: 2026-10-31T12:45:00Z
 featured: true
 tags:
   - mvp
