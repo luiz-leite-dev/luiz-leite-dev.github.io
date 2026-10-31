@@ -34,9 +34,14 @@ const homePath = getRelativeLocaleUrl(locale, "");
     class="app-layout my-1"
   >
     <section id="hero" class="border-border border-b pt-8 pb-6">
+      <p class="mb-2 text-sm font-medium uppercase tracking-widest text-accent">
+        Engenharia de Software · Requisitos · Arquitetura
+      </p>
+
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Mingalaba
+        Transformando necessidades de negócio em software bem projetado
       </h1>
+
       <a
         target="_blank"
         href={`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}rss.xml`}
@@ -53,21 +58,28 @@ const homePath = getRelativeLocaleUrl(locale, "");
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        Sou analista de requisitos e desenvolvedor de software.
+        Escrevo sobre a ponte entre negócio, pessoas e tecnologia: como transformar
+        requisitos em decisões de arquitetura, produtos mais claros e sistemas mais
+        sustentáveis.
       </p>
+
       <p class="mt-2">
-        Read the blog posts or check{" "}
-        <LinkButton
-          class="hover:text-accent underline decoration-dashed underline-offset-4"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton>{" "}
-        for more info.
+        Aqui você encontra artigos sobre engenharia de software, modelagem de requisitos,
+        arquitetura, boas práticas de desenvolvimento e aprendizados de projetos reais.
       </p>
+
+      <div class="mt-6 flex flex-wrap gap-3">
+        <LinkButton href={getRelativeLocaleUrl(locale, "posts")}>
+          Ler artigos
+          <IconArrowRight class="inline-block rtl:-rotate-180" />
+        </LinkButton>
+
+        <LinkButton href={getRelativeLocaleUrl(locale, "about")}>
+          Sobre mim
+        </LinkButton>
+      </div>
+
       {
         socials.length > 0 && (
           <div class="mt-4 flex max-sm:flex-col sm:items-center">
@@ -78,6 +90,38 @@ const homePath = getRelativeLocaleUrl(locale, "");
           </div>
         )
       }
+    </section>
+
+    <section id="focus-areas" class="border-border border-b pt-12 pb-6">
+      <h2 class="text-2xl font-semibold tracking-wide">
+        Onde posso ajudar
+      </h2>
+
+      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="border-border rounded-lg border p-5">
+          <h3 class="text-lg font-semibold">Requisitos e produto</h3>
+          <p class="mt-2">
+            Levantamento, análise e documentação de requisitos; descoberta de problemas
+            reais; escrita de histórias, critérios de aceite e regras de negócio.
+          </p>
+        </article>
+
+        <article class="border-border rounded-lg border p-5">
+          <h3 class="text-lg font-semibold">Arquitetura de software</h3>
+          <p class="mt-2">
+            Decisões arquiteturais, separação de responsabilidades, padrões, trade-offs
+            e evolução sustentável de sistemas.
+          </p>
+        </article>
+
+        <article class="border-border rounded-lg border p-5">
+          <h3 class="text-lg font-semibold">Desenvolvimento e boas práticas</h3>
+          <p class="mt-2">
+            Código legível, testes, automação, integração contínua e práticas que reduzem
+            risco e aumentam a qualidade do software.
+          </p>
+        </article>
+      </div>
     </section>
 
     {
@@ -118,7 +162,7 @@ const homePath = getRelativeLocaleUrl(locale, "");
 
     <div class="my-8 text-center">
       <LinkButton href={getRelativeLocaleUrl(locale, "posts")}>
-        {t.home.allPosts}
+        Ver todos os artigos
         <IconArrowRight class="inline-block rtl:-rotate-180" />
       </LinkButton>
     </div>
