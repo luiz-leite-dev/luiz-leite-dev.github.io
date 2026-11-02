@@ -5,6 +5,7 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import Datetime from "@/components/Datetime.astro";
 import Tag from "@/components/Tag.astro";
+import Comments from "@/components/Comments.astro";
 import { getPostSlug, getPostUrl } from "@/utils/getPostPaths";
 import { getSortedPosts } from "@/utils/getSortedPosts";
 import { slugifyStr } from "@/utils/slugify";
@@ -143,6 +144,7 @@ const ogImage = ogImageUrl
       ]}
     >
       <Content />
+      <Comments />
     </article>
 
     <hr class="my-8 border-dashed" />

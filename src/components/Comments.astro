@@ -1,0 +1,51 @@
+---
+const giscus = {
+  repo: "luiz-leite-dev/luiz-leite-dev.github.io",
+  repoId: "R_kgDOVdlAWA",
+  category: "General",
+  categoryId: "DIC_kwDOVdlAWM4DKPoE",
+  mapping: "pathname",
+  strict: "0",
+  reactionsEnabled: "1",
+  emitMetadata: "0",
+  inputPosition: "bottom",
+  theme: "preferred_color_scheme",
+  lang: "pt",
+  loading: "lazy",
+};
+---
+
+<section id="comments" class="mt-12 border-t border-border pt-8">
+  <h2 class="mb-4 text-2xl font-semibold">Comentários</h2>
+  <div id="giscus-container"></div>
+</section>
+
+<script define:vars={{ giscus }}>
+  function loadGiscus() {
+    const container = document.getElementById("giscus-container");
+    if (!container || container.childElementCount > 0) return;
+
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.crossOrigin = "anonymous";
+
+    script.setAttribute("data-repo", giscus.repo);
+    script.setAttribute("data-repo-id", giscus.repoId);
+    script.setAttribute("data-category", giscus.category);
+    script.setAttribute("data-category-id", giscus.categoryId);
+    script.setAttribute("data-mapping", giscus.mapping);
+    script.setAttribute("data-strict", giscus.strict);
+    script.setAttribute("data-reactions-enabled", giscus.reactionsEnabled);
+    script.setAttribute("data-emit-metadata", giscus.emitMetadata);
+    script.setAttribute("data-input-position", giscus.inputPosition);
+    script.setAttribute("data-theme", giscus.theme);
+    script.setAttribute("data-lang", giscus.lang);
+    script.setAttribute("data-loading", giscus.loading);
+
+    container.appendChild(script);
+  }
+
+  loadGiscus();
+  document.addEventListener("astro:page-load", loadGiscus);
+</script>
