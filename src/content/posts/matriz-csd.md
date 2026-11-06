@@ -87,11 +87,11 @@ Comece com um escopo pequeno e claro. Evite “melhorar a experiência do usuár
 
 **Exemplo ruim:**
 
-> “Melhorar o app de vendas.”
+> Melhorar o app de vendas.
 
 **Exemplo melhor:**
 
-> “Reduzir o tempo que vendedores externos levam para registrar uma visita a um cliente.”
+> Reduzir o tempo que vendedores externos levam para registrar uma visita a um cliente.
 
 A definição do problema orienta quais certezas, suposições e dúvidas fazem sentido incluir.
 
