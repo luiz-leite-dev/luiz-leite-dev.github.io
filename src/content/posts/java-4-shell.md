@@ -28,7 +28,7 @@ A descoberta ganhou atenção porque o Java é amplamente usado em sistemas corp
 
 O defeito não está na ideia de codificação Base64 em si, mas em uma **otimização de baixo nível do HotSpot/OpenJDK** usada para acelerar a decodificação Base64. Em CPUs x86-64 que suportam o conjunto de instruções **AVX-512 VBMI**, uma entrada Base64 malformada pode acionar uma corrupção de memória. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)
 
-Segundo a divulgação técnica, uma sequência de 64 caracteres `A` seguida por `=` foi suficiente para provocar o comportamento anômalo. Em um cenário controlado, os pesquisadores relataram que a corrupção poderia ser direcionada por meio de *heap grooming* e resultar em execução de código arbitrário. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)
+Segundo a divulgação técnica, uma sequência de 64 caracteres `A` seguida por `=` foi suficiente para provocar o comportamento anômalo. Em um cenário controlado, os pesquisadores relataram que a corrupção poderia ser direcionada por meio de _heap grooming_ e resultar em execução de código arbitrário. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)
 
 A Oracle classificou o CVE-2026-114938 com pontuação **8.1 na CVSS 3.1**. O OpenJDK atribui a falha ao componente `hotspot/compiler`. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)
 
@@ -36,15 +36,15 @@ A Oracle classificou o CVE-2026-114938 com pontuação **8.1 na CVSS 3.1**. O Op
 
 A vulnerabilidade não afeta igualmente todas as versões de Java. O problema está restrito a versões modernas do OpenJDK/HotSpot que utilizam o código otimizado vulnerável e a ambientes x86-64 com AVX-512 VBMI. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)
 
-| Linha Java | Situação |
-|---|---|
-| Java 8 | Não afetada pelo código vulnerável do Java4Shell.  [bbc](http://bbc.com/news/articles/cke89jevqm1vo) |
-| Java 11 | Não afetada pelo código vulnerável do Java4Shell.  [bbc](http://bbc.com/news/articles/cke89jevqm1vo) |
-| Java 17 | Afetada a partir da versão 17.0.6; builds até 17.0.21.0.3 foram listados como vulneráveis.  [bbc](http://bbc.com/news/articles/cke89jevqm1vo) |
-| Java 21 | Afetada; builds até 21.0.13.0.3 foram listados como vulneráveis.  [bbc](http://bbc.com/news/articles/cke89jevqm1vo) |
-| Java 25 | Afetada; builds até 25.0.5.0.3 foram listados como vulneráveis.  [bbc](http://bbc.com/news/articles/cke89jevqm1vo) |
-| Java 27 | Afetada; builds até 27.0.1.0.3 foram listados como vulneráveis.  [bbc](http://bbc.com/news/articles/cke89jevqm1vo) |
-| Java SE 8 Performance Pack | O build 8u511b33-perf foi listado pela Oracle como afetado.  [news9live](https://www.news9live.com/technology/tech-news/java4shell-vulnerability-ai-discovers-critical-java-security-flaw-explained-3025569) |
+| Linha Java                 | Situação                                                                                                                                                                                                    |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Java 8                     | Não afetada pelo código vulnerável do Java4Shell. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)                                                                                                         |
+| Java 11                    | Não afetada pelo código vulnerável do Java4Shell. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)                                                                                                         |
+| Java 17                    | Afetada a partir da versão 17.0.6; builds até 17.0.21.0.3 foram listados como vulneráveis. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)                                                                |
+| Java 21                    | Afetada; builds até 21.0.13.0.3 foram listados como vulneráveis. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)                                                                                          |
+| Java 25                    | Afetada; builds até 25.0.5.0.3 foram listados como vulneráveis. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)                                                                                           |
+| Java 27                    | Afetada; builds até 27.0.1.0.3 foram listados como vulneráveis. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)                                                                                           |
+| Java SE 8 Performance Pack | O build 8u511b33-perf foi listado pela Oracle como afetado. [news9live](https://www.news9live.com/technology/tech-news/java4shell-vulnerability-ai-discovers-critical-java-security-flaw-explained-3025569) |
 
 A matriz de vulnerabilidades do OpenJDK confirma que o CVE-2026-114938 afeta as linhas **17, 21, 25 e 27**, enquanto as linhas 8 e 11 não constam como afetadas. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)
 
@@ -69,7 +69,7 @@ Uma aplicação pode ter dependências atualizadas e, ainda assim, permanecer ex
 
 ### Versão, distribuição e build
 
-“Java 17” não é informação suficiente para decidir se o ambiente está seguro. É necessário identificar a distribuição — Oracle JDK, Temurin, Corretto, Zulu, GraalVM, entre outras — e o número completo do *update* ou build. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)
+“Java 17” não é informação suficiente para decidir se o ambiente está seguro. É necessário identificar a distribuição — Oracle JDK, Temurin, Corretto, Zulu, GraalVM, entre outras — e o número completo do _update_ ou build. [bbc](http://bbc.com/news/articles/cke89jevqm1vo)
 
 A checagem deve considerar:
 

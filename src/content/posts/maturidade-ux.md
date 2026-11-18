@@ -21,7 +21,7 @@ Tudo certo, não é?
 
 Mas será que alguém perguntou ao cliente se aquela era realmente a melhor solução para o problema dele?
 
-É justamente nesse tipo de situação que começamos a perceber o nível de maturidade de UX (*User Experience*, ou Experiência do Usuário) de uma organização.
+É justamente nesse tipo de situação que começamos a perceber o nível de maturidade de UX (_User Experience_, ou Experiência do Usuário) de uma organização.
 
 Antes de continuar, faça um pequeno exercício.
 
@@ -33,39 +33,39 @@ Selecione a opção que melhor representa a realidade da organização em que vo
 
 UX? Nunca nem ouvi falar! As decisões são tomadas sem considerar as necessidades dos usuários. O importante é entregar o que foi solicitado.
 
-*Exemplo:* o sistema funciona perfeitamente do ponto de vista técnico, mas ninguém sabe explicar por que os usuários precisam de ajuda para realizar tarefas simples.
+_Exemplo:_ o sistema funciona perfeitamente do ponto de vista técnico, mas ninguém sabe explicar por que os usuários precisam de ajuda para realizar tarefas simples.
 
 **2. Limitada (Limited)**
 
 Alguém já percebeu que UX é importante, mas as iniciativas são raras e geralmente dependem da boa vontade de algum profissional.
 
-*Exemplo:* um desenvolvedor resolve conversar com alguns clientes antes de alterar uma tela. Boa iniciativa! Pena que isso não acontece nos outros projetos.
+_Exemplo:_ um desenvolvedor resolve conversar com alguns clientes antes de alterar uma tela. Boa iniciativa! Pena que isso não acontece nos outros projetos.
 
 **3. Emergente (Emergent)**
 
 A empresa começou a experimentar pesquisas, protótipos e testes de usabilidade. Algumas equipes já entenderam a importância dessas práticas, mas ainda não existe consistência.
 
-*Exemplo:* uma equipe utiliza Figma para validar uma funcionalidade antes de desenvolvê-la, enquanto outra continua decidindo tudo na base do "acho que o usuário vai gostar".
+_Exemplo:_ uma equipe utiliza Figma para validar uma funcionalidade antes de desenvolvê-la, enquanto outra continua decidindo tudo na base do "acho que o usuário vai gostar".
 
 **4. Estruturada (Structured)**
 
 UX já tem espaço definido na organização, com profissionais especializados, métodos e processos estabelecidos.
 
-*Exemplo:* existe uma equipe de UX responsável por pesquisas e protótipos, mas nem todos os projetos lembram de envolvê-la desde o início.
+_Exemplo:_ existe uma equipe de UX responsável por pesquisas e protótipos, mas nem todos os projetos lembram de envolvê-la desde o início.
 
 **5. Integrada (Integrated)**
 
 UX deixou de ser responsabilidade exclusiva de designers. Produto, desenvolvimento, negócio e outras áreas trabalham juntos para proporcionar boas experiências.
 
-*Exemplo:* antes de desenvolver uma funcionalidade, a equipe investiga o problema, conversa com usuários, testa alternativas e acompanha os resultados.
+_Exemplo:_ antes de desenvolver uma funcionalidade, a equipe investiga o problema, conversa com usuários, testa alternativas e acompanha os resultados.
 
 **6. Orientada ao usuário (User-Driven)**
 
 O usuário está no centro das decisões. A organização utiliza continuamente o conhecimento sobre suas necessidades para orientar estratégias, produtos e serviços.
 
-*Exemplo:* a empresa identifica uma dificuldade dos clientes antes mesmo de receber reclamações e utiliza essa descoberta para antecipar melhorias ou criar novas soluções.
+_Exemplo:_ a empresa identifica uma dificuldade dos clientes antes mesmo de receber reclamações e utiliza essa descoberta para antecipar melhorias ou criar novas soluções.
 
-*Observação: esses estágios são referências para reflexão, não uma avaliação definitiva da organização.*
+_Observação: esses estágios são referências para reflexão, não uma avaliação definitiva da organização._
 
 ## Mas o que determina essa maturidade?
 
@@ -131,4 +131,4 @@ Compartilhe sua opinião nos comentários!
 
 - PERNICE, Kara; GIBBONS, Sarah; MORAN, Kate; WHITENTON, Kathryn. [The 6 Levels of UX Maturity](https://www.nngroup.com/articles/ux-maturity-model/). Nielsen Norman Group, 2021.
 
-*Este artigo é uma interpretação introdutória dos conceitos apresentados pelo Nielsen Norman Group. Os exemplos são autorais e foram elaborados para facilitar a compreensão e contextualização dos conceitos.*
+_Este artigo é uma interpretação introdutória dos conceitos apresentados pelo Nielsen Norman Group. Os exemplos são autorais e foram elaborados para facilitar a compreensão e contextualização dos conceitos._

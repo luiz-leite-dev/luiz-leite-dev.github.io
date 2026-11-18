@@ -23,7 +23,7 @@ Ela é especialmente útil no início de uma feature, de um produto ou de uma de
 > **CSD** significa **Certezas, Suposições e Dúvidas**.  
 > A ideia central é: não trate uma hipótese como fato, e não deixe uma dúvida importante sem dono.
 
-A ferramenta foi criada no Brasil pela Livework São Paulo, por Tennyson Pinheiro, Luis Alt e equipe, e é frequentemente associada ao Design Thinking e ao design de serviços.  Apesar da origem fora do mundo estritamente técnico, ela se encaixa muito bem em equipes ágeis, de produto e de engenharia. [repositorio.enap.gov](https://repositorio.enap.gov.br/server/api/core/bitstreams/6a968a6c-d74c-4f8e-a54e-ce4b180184b0/content)
+A ferramenta foi criada no Brasil pela Livework São Paulo, por Tennyson Pinheiro, Luis Alt e equipe, e é frequentemente associada ao Design Thinking e ao design de serviços. Apesar da origem fora do mundo estritamente técnico, ela se encaixa muito bem em equipes ágeis, de produto e de engenharia. [repositorio.enap.gov](https://repositorio.enap.gov.br/server/api/core/bitstreams/6a968a6c-d74c-4f8e-a54e-ce4b180184b0/content)
 
 ## Por que usar CSD em software?
 
@@ -33,11 +33,11 @@ A Matriz CSD torna esse tipo de conversa visível.
 
 Em vez de decidir com base na pessoa mais sênior, mais falante ou mais apressada, o time classifica afirmações em três categorias:
 
-| Categoria | Pergunta-chave | Exemplo |
-|---|---|---|
-| **Certezas** | O que já temos evidência para afirmar? | “O relatório atual leva 8 minutos para ser gerado, segundo logs e reclamações dos usuários.” |
-| **Suposições** | O que acreditamos, mas ainda não validamos? | “Se adicionarmos filtros salvos, os analistas usarão o relatório com mais frequência.” |
-| **Dúvidas** | O que precisamos descobrir antes de decidir? | “Quais campos os analistas realmente usam ao exportar dados?” |
+| Categoria      | Pergunta-chave                               | Exemplo                                                                                      |
+| -------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| **Certezas**   | O que já temos evidência para afirmar?       | “O relatório atual leva 8 minutos para ser gerado, segundo logs e reclamações dos usuários.” |
+| **Suposições** | O que acreditamos, mas ainda não validamos?  | “Se adicionarmos filtros salvos, os analistas usarão o relatório com mais frequência.”       |
+| **Dúvidas**    | O que precisamos descobrir antes de decidir? | “Quais campos os analistas realmente usam ao exportar dados?”                                |
 
 A matriz organiza fatos, histórias, hipóteses e perguntas, ajudando o time a direcionar a pesquisa e a promover alinhamento coletivo. [repositorio.enap.gov](https://repositorio.enap.gov.br/bitstream/1/6703/4/Matriz%20CSD.pdf)
 
@@ -62,20 +62,20 @@ Ela também funciona bem quando um projeto já está em andamento, mas o time pe
 
 A estrutura é deliberadamente simples:
 
-|         Certezas         |      Suposições     |            Dúvidas           |
-|--------------------------|---------------------|------------------------------|
+| Certezas                 | Suposições          | Dúvidas                      |
+| ------------------------ | ------------------- | ---------------------------- |
 | Fatos, dados, evidências | Hipóteses e crenças | Perguntas ainda sem resposta |
 
 Cada item deve ser curto, específico e, sempre que possível, atribuído a uma fonte ou a um responsável por validação.
 
 Por exemplo, para uma funcionalidade de **exportação de relatórios**:
 
-| Certezas | Suposições | Dúvidas |
-|---|---|---|
-| Usuários exportam dados para Excel. | Exportar em CSV resolverá a maior parte dos casos. | Quais formatos são realmente necessários? |
-| O relatório atual demora mais de 5 minutos. | O gargalo está na consulta ao banco. | Onde exatamente está a lentidão? |
-| O time de suporte recebe reclamações sobre filtros. | Filtros salvos reduzirão retrabalho. | Quais combinações de filtros são mais usadas? |
-| Não há limite definido para exportações. | Um limite de 10 mil linhas será aceitável. | Qual volume os usuários exportam por mês? |
+| Certezas                                            | Suposições                                         | Dúvidas                                       |
+| --------------------------------------------------- | -------------------------------------------------- | --------------------------------------------- |
+| Usuários exportam dados para Excel.                 | Exportar em CSV resolverá a maior parte dos casos. | Quais formatos são realmente necessários?     |
+| O relatório atual demora mais de 5 minutos.         | O gargalo está na consulta ao banco.               | Onde exatamente está a lentidão?              |
+| O time de suporte recebe reclamações sobre filtros. | Filtros salvos reduzirão retrabalho.               | Quais combinações de filtros são mais usadas? |
+| Não há limite definido para exportações.            | Um limite de 10 mil linhas será aceitável.         | Qual volume os usuários exportam por mês?     |
 
 Perceba: uma **certeza** não é “todo mundo sabe que...”. É algo apoiado por dados, observação, documentação ou evidência concreta. A ENAP define certezas como dados e histórias conhecidos, suposições como hipóteses e dúvidas como perguntas. [repositorio.enap.gov](https://repositorio.enap.gov.br/bitstream/1/6703/4/Matriz%20CSD.pdf)
 
@@ -146,12 +146,12 @@ Suposições com alto impacto e alta incerteza devem virar prioridade de pesquis
 
 Cada dúvida importante deve receber um próximo passo:
 
-| Dúvida | Próximo passo | Responsável | Prazo |
-|---|---|---|---|
-| Quais filtros os analistas mais usam? | Analisar eventos de uso no produto | Analista de dados | 3 dias |
-| O fluxo de aprovação é compreendido? | Entrevistar 5 aprovadores | UX Research | 1 semana |
-| A API atual suporta paginação eficiente? | Fazer spike técnico | Backend | 2 dias |
-| O usuário prefere PDF ou Excel? | Testar protótipo com 6 usuários | Design | 1 semana |
+| Dúvida                                   | Próximo passo                      | Responsável       | Prazo    |
+| ---------------------------------------- | ---------------------------------- | ----------------- | -------- |
+| Quais filtros os analistas mais usam?    | Analisar eventos de uso no produto | Analista de dados | 3 dias   |
+| O fluxo de aprovação é compreendido?     | Entrevistar 5 aprovadores          | UX Research       | 1 semana |
+| A API atual suporta paginação eficiente? | Fazer spike técnico                | Backend           | 2 dias   |
+| O usuário prefere PDF ou Excel?          | Testar protótipo com 6 usuários    | Design            | 1 semana |
 
 Assim, a CSD deixa de ser uma “dinâmica bonita” e passa a orientar decisões reais de backlog, discovery e engenharia.
 
@@ -206,18 +206,18 @@ A Matriz CSD não serve apenas para UX. Ela também é excelente para decisões 
 
 Suponha que o produto precise integrar um novo meio de pagamento.
 
-| Certezas | Suposições | Dúvidas |
-|---|---|---|
-| O gateway atual cobra 3,99% por transação. | O novo gateway reduzirá o custo em pelo menos 20%. | Qual é o custo real por faixa de volume? |
-| 12% das transações falham por cartão recusado. | A nova solução melhorará a taxa de aprovação. | Quais motivos de recusa predominam? |
-| O sistema atual suporta webhooks. | Webhooks serão suficientes para conciliação. | Quais eventos o provedor realmente envia? |
-| O time tem experiência com integrações REST. | A integração levará duas sprints. | Quais casos extremos exigem tratamento especial? |
+| Certezas                                       | Suposições                                         | Dúvidas                                          |
+| ---------------------------------------------- | -------------------------------------------------- | ------------------------------------------------ |
+| O gateway atual cobra 3,99% por transação.     | O novo gateway reduzirá o custo em pelo menos 20%. | Qual é o custo real por faixa de volume?         |
+| 12% das transações falham por cartão recusado. | A nova solução melhorará a taxa de aprovação.      | Quais motivos de recusa predominam?              |
+| O sistema atual suporta webhooks.              | Webhooks serão suficientes para conciliação.       | Quais eventos o provedor realmente envia?        |
+| O time tem experiência com integrações REST.   | A integração levará duas sprints.                  | Quais casos extremos exigem tratamento especial? |
 
-Aqui, as **dúvidas** podem virar *spikes técnicos*, testes em ambiente de sandbox, análise de logs ou prova de conceito. Já as **suposições** podem virar critérios de aceitação e métricas de sucesso.
+Aqui, as **dúvidas** podem virar _spikes técnicos_, testes em ambiente de sandbox, análise de logs ou prova de conceito. Já as **suposições** podem virar critérios de aceitação e métricas de sucesso.
 
 Por exemplo:
 
-- **Suposição:** “A nova gateway reduzirá falhas de pagamento.”  
+- **Suposição:** “A nova gateway reduzirá falhas de pagamento.”
 - **Critério de validação:** “Em um piloto de 30 dias, a taxa de aprovação deve aumentar de 88% para pelo menos 92%, sem aumento relevante de chargebacks.”
 
 Isso transforma uma opinião em um critério verificável.
@@ -281,7 +281,7 @@ Para times que querem experimentar sem transformar a prática em burocracia:
 5. **15 minutos:** priorizem as dúvidas e suposições mais críticas.
 6. **10 minutos:** definam próximos passos, responsáveis e prazos.
 
-O resultado deve caber em uma página, um quadro no Miro/FigJam ou uma tabela simples. A simplicidade é justamente uma das razões pelas quais a ferramenta é tão difundida. 
+O resultado deve caber em uma página, um quadro no Miro/FigJam ou uma tabela simples. A simplicidade é justamente uma das razões pelas quais a ferramenta é tão difundida.
 
 A Matriz CSD não promete eliminar incerteza — isso seria mentira. O que ela faz é algo mais útil: obriga o time a reconhecer a incerteza, nomeá-la e decidir conscientemente qual incerteza vale a pena investigar antes de transformá-la em código.
 
@@ -301,18 +301,18 @@ Compartilhe sua opinião nos comentários!
   [https://www.nngroup.com/articles/csd-matrix/](https://www.nngroup.com/articles/csd-matrix/)
 
 - **Alura — Matriz CSD: visualizando a dimensão dos problemas:** boa introdução voltada a times de produto e desenvolvimento.  
- [https://www.alura.com.br/artigos/matriz-csd-visualizando-dimensao-dos-problemas](https://www.alura.com.br/artigos/matriz-csd-visualizando-dimensao-dos-problemas)
+  [https://www.alura.com.br/artigos/matriz-csd-visualizando-dimensao-dos-problemas](https://www.alura.com.br/artigos/matriz-csd-visualizando-dimensao-dos-problemas)
 
 - **AEVO — Matriz CSD: aprenda como utilizar em seus projetos:** conteúdo sobre uso da ferramenta para iniciar ou reorganizar projetos.  
   [https://blog.aevo.com.br/matriz-csd/](https://blog.aevo.com.br/matriz-csd/)
 
-- **FM2S — Matriz CSD: o que é, como aplicar e exemplos práticos:** material com foco em organização de informações antes da tomada de decisão.   
+- **FM2S — Matriz CSD: o que é, como aplicar e exemplos práticos:** material com foco em organização de informações antes da tomada de decisão.  
   [https://www.fm2s.com.br/blog/matriz-csd](https://www.fm2s.com.br/blog/matriz-csd)
 
-- **Venngage — Matriz CSD: saiba o que é e como usar no seu negócio:** visão acessível sobre o uso da matriz para clarear dúvidas antes de uma ação.   
+- **Venngage — Matriz CSD: saiba o que é e como usar no seu negócio:** visão acessível sobre o uso da matriz para clarear dúvidas antes de uma ação.  
   [https://pt.venngage.com/blog/matriz-csd/](https://pt.venngage.com/blog/matriz-csd/)
 
-- **VentureHub — Matriz CSD:** ferramenta e contexto de uso para planejamento e alinhamento de projetos.   
+- **VentureHub — Matriz CSD:** ferramenta e contexto de uso para planejamento e alinhamento de projetos.  
   [https://venturehub.se/tools/matriz-csd-ferramenta/](https://venturehub.se/tools/matriz-csd-ferramenta/)
 
 - **Catarinas Design — Case product design:** exemplo aplicado de uso da matriz em um projeto de redesign de sistema da área de saúde.  
