@@ -1,0 +1,13 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+
+  "prettier.requireConfig": true,
+  "prettier.resolveGlobalModules": false,
+  "prettier.documentSelectors": ["**/*.astro"],
+
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
