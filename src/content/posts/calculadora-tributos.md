@@ -1,7 +1,7 @@
 ---
 title: "Calculadora de Tributos"
 description: "Como incorporar o motor de cálculo alinhado às regras oficiais."
-pubDatetime: 2026-11-17T10:00:00Z
+pubDatetime: 2026-12-17T10:00:00Z
 featured: false
 tags:
   - tributos
