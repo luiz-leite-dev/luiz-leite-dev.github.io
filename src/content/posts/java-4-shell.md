@@ -1,7 +1,7 @@
 ---
 title: "Java4Shell"
 description: "O que avaliar nos seus projetos referente a esta falha no Java."
-pubDatetime: 2026-11-18T01:00:00Z
+pubDatetime: 2026-11-18T06:00:00Z
 featured: true
 tags:
   - java
